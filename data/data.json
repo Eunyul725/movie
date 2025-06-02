@@ -1,0 +1,584 @@
+{
+    "banner": [
+        {
+            "name": "콘클라베", 
+            "img": "images/banner_1.jpg", 
+            "text": "기억하라, 당신은 하나다!<br>데이 무어 X 마가렛 퀄리의 연기 차력쇼" 
+        },
+        {
+            "name": "서브스턴스", 
+            "img": "images/banner_2.jpg", 
+            "text": "닫힌 문 안에서 모든 것이 결정된다<br>신의 이름으로 벌어지는 가장 치열한 정치" 
+        },
+        {
+            "name": "창설", 
+            "img": "images/banner_3.jpg", 
+            "text": "그 여름, 사랑은 물소리처럼 시작됐다<br>요즘 알고리즘이 자꾸 이 마음 들춰요" 
+        },
+        {
+            "name": "플로우", 
+            "img": "images/banner_4.jpg", 
+            "text": "함께여서 더 특별한 고양이의 대서사시<br>랜선 집사님들, 지금 할인 받으라냥" 
+        },
+        {
+            "name": "퇴마록", 
+            "img": "images/banner_5.jpg", 
+            "text": "연애 세포 소멸 직전, 사랑 바이러스가 침투했다!<br>배두나 X 장기하 X 김윤석 X 손석구 전염 시작" 
+        },
+        {
+            "name": "바이러스", 
+            "img": "images/banner_6.jpg", 
+            "text": "닫힌 문 안에서 모든 것이 결정된다<br>신의 이름으로 벌어지는 가장 치열한 정치" 
+        },
+        {
+            "name": "달팽이의 회고록", 
+            "img": "images/banner_7.jpg", 
+            "text": "조금 느려도 괜찮아요. 중요한 건 계속 나아간다는 것<br>한 걸음의 정서를 눌러 담은 스톱모션 애니" 
+        }
+    ],
+
+    "smile_Movies": [
+        {
+            "name": "노팅힐",
+            "img": "images/romance_2.jpg"
+        },
+        {
+            "name": "몬스터호텔",
+            "img": "images/ani_2.jpg"
+        },
+        {
+            "name": "식물도감",
+            "img": "images/romance_1.jpg"
+        },
+        {
+            "name": "드롭",
+            "img": "images/new_1.jpg"
+        },
+        {
+            "name": "오소마츠6 쌍둥이 영혼의 타코야끼 파티",
+            "img": "images/new_3.jpg"
+        }
+    ],
+    
+    "sad_Movies": [
+        {
+            "name": "어바웃타임",
+            "img": "images/comfort_1.jpg"
+        },
+        {
+            "name": "터널",
+            "img": "images/comfort_2.jpg"
+        },
+        {
+            "name": "퍼펙트데이즈",
+            "img": "images/comfort_3.jpg"
+        },
+        {
+            "name": "송투유",
+            "img": "images/comfort_4.jpg"
+        },
+        {
+            "name": "날씨의 아이",
+            "img": "images/comfort_5.jpg"
+        }
+    ],
+
+    "anger_Movies": [
+        {
+            "name": "내부자들",
+            "img": "images/action_3.jpg"
+        },
+        {
+            "name": "아수라",
+            "img": "images/action_2.jpg"
+        },
+        {
+            "name": "베놈",
+            "img": "images/action_1.jpg"
+        },
+        {
+            "name": "콘클라베",
+            "img": "images/hot_2.jpg"
+        },
+        {
+            "name": "서브스턴스",
+            "img": "images/banner_2.jpg"
+        }
+    ],
+
+    "heart_Movies": [
+        {
+            "name": "러브레터",
+            "img": "images/romance_3.jpg"
+        },
+        {
+            "name": "오늘 밤, 세계에서 이사랑이 사라진다해도",
+            "img": "images/romance_5.jpg"
+        },
+        {
+            "name": "드래곤 길들이기",
+            "img": "images/ani_5.jpg"
+        },
+        {
+            "name": "청설",
+            "img": "images/hot_1.jpg"
+        },
+        {
+            "name": "박쥐",
+            "img": "images/romance_4.jpg"
+        }
+    ],
+
+    "tired_Movies": [
+        {
+            "name": "나의히어로아카데미아",
+            "img": "images/ani_1.jpg"
+        },
+        {
+            "name": "월래스&그로밋 거대토끼의 저주",
+            "img": "images/ani_3.jpg"
+        },
+        {
+            "name": "4월의 불꽃",
+            "img": "images/new_2.jpg"
+        },
+        {
+            "name": "가는오는 이민정",
+            "img": "images/new_4.jpg"
+        },
+        {
+            "name": "월드 인베이전",
+            "img": "images/ani_5.jpg"
+        }
+    ],
+
+    "balance_choices": [
+        {
+            "name": "코미디",
+            "icon": "images/vs_Comedy.png",
+            "desc": "\"웃다가 배꼽빠질 뻔\""
+        },
+        {
+            "name": "로맨스",
+            "icon": "images/vs_Romance.png",
+            "desc": "\"가슴이 두근두근\""
+        },
+        {
+            "name": "액션",
+            "icon": "images/vs_Action.png",
+            "desc": "\"긴장감에 손에 땀을 쥐고!\""
+        },
+        {
+            "name": "공포",
+            "icon": "images/vs_Horror.png",
+            "desc": "\"소름 쫙, 심장 쿵!\""
+        },
+        {
+            "name": "범죄",
+            "icon": "images/vs_Crime.png",
+            "desc": "\"쫒고 쫒기는 숨막힘\""
+        },
+        {
+            "name": "미스터리",
+            "icon": "images/vs_Mystery.png",
+            "desc": "\"알쏭달쏭, 반전의 묘미\""
+        },
+        {
+            "name": "시대극",
+            "icon": "images/vs_Period.png",
+            "desc": "\"시간을 건너 만나는 이야기\""
+        },
+        {
+            "name": "로맨스 코미디",
+            "icon": "images/vs_Rom-com.png",
+            "desc": "\"심장 쿵! 입꼬리 씩~\""
+        },
+        {
+            "name": "판타지",
+            "icon": "images/vs_Fantasy.png",
+            "desc": "\"상상 너머의 세계로!\""
+        }
+    ],
+
+    "balance_info": [
+        {
+            "name": "코미디",
+            "key": "vs_comedy",
+            "title": "웃긴 거 보러 왓챠",
+            "subtitle": "재치 있는 대사, 엉뚱한 전개에 마음이 가요"
+        },
+        {
+            "name": "로맨스",
+            "key": "vs_romance",
+            "title": "두근두근 설레고 싶다!",
+            "subtitle": "잔잔한 설렘, 몰입도 최고!"
+        },
+        {
+            "name": "액션",
+            "key": "vs_action",
+            "title": "눈 앞에 펼쳐진 짜릿한 액션!",
+            "subtitle": "터지는 긴장감, 손에 땀을 쥐게 해"
+        },
+        {
+            "name": "공포",
+            "key": "vs_horror",
+            "title": "무서운데 자꾸 보고싶어",
+            "subtitle": "심장 쫄깃해지는 긴장감"
+        },
+        {
+            "name": "범죄",
+            "key": "vs_crime",
+            "title": "범인은 반드시 있다!",
+            "subtitle": "날카롭고 치밀한 범죄의 퍼즐"
+        },
+        {
+            "name": "미스터리",
+            "key": "vs_mystery",
+            "title": "알듯 말듯, 넌 누구야?",
+            "subtitle": "단서 하나하나에 빠져드는 몰입감"
+        },
+        {
+            "name": "시대극",
+            "key": "vs_period",
+            "title": "그 시절, 그들의 이야기",
+            "subtitle": "고즈넉한 분위기 속 인물들의 서사"
+        },
+        {
+            "name": "로맨스 코미디",
+            "key": "vs_rom-com",
+            "title": "설레고 웃긴 게 제일 좋아!",
+            "subtitle": "가볍지만 마음에 오래 남는 이야기"
+        },
+        {
+            "name": "판타지",
+            "key": "vs_fantasy",
+            "title": "현실을 벗어난 마법 같은 순간",
+            "subtitle": "상상 속 세계에서 펼쳐지는 이야기"
+        }
+    ],
+
+    "vs_comedy": [
+        {
+            "name": "청년경찰",
+            "img": "images/comedy_1.jpg",
+            "text": "의욕만렙 초짜콤비 수사기"
+        },
+        {
+            "name": "디스 이즈 디엔드",
+            "img": "images/comedy_2.jpg",
+            "text": "헐리우드 셀럽들의 병맛 종말 파티"
+        },
+        {
+            "name": "킬링 로맨스",
+            "img": "images/comedy_3.jpg",
+            "text": "기괴하고 미친 감성의 복수 로맨스"
+        }
+    ],
+
+    "vs_romance": [
+        {
+            "name": "노팅힐",
+            "img": "images/romance_2.jpg",
+            "text": "현실과 동화 사이, 설레는 사랑"
+        },
+        {
+            "name": "크라임즈 오브 패션",
+            "img": "images/vs_romance_1.jpg",
+            "text": "낮과 밤, 두 얼굴의 사랑이 교차하는 순간"
+        },
+        {
+            "name": "식물도감",
+            "img": "images/romance_1.jpg",
+            "text": "조용히 자라는 감정, 슬며시 피어나는 사랑"
+        }
+    ],
+    "vs_action": [
+        {
+            "name": "원맨",
+            "img": "images/vs_action_1.jpg",
+            "text": "한 남자의 마지막 결단, 조용히 폭발한다"
+        },
+        {
+            "name": "레옹",
+            "img": "images/vs_action_2.jpg",
+            "text": "킬러와 소녀의 조용한 공감, 그리고 총성"
+        },
+        {
+            "name": "거룩한 밤",
+            "img": "images/vs_action_3.jpg",
+            "text": "성스러운 밤, 정의가 총을 든다"
+        }
+    ],
+    "vs_horror": [
+        {
+            "name": "요가학원",
+            "img": "images/vs_horror_1.jpg",
+            "text": "완벽을 향한 집착, 그 끝은 공포"
+        },
+        {
+            "name": "장화,홍련",
+            "img": "images/vs_horror_2.jpg",
+            "text": "기억과 환상, 그 사이에 숨어있는 진실"
+        },
+        {
+            "name": "라이프",
+            "img": "images/vs_horror_3.jpg",
+            "text": "우주에서 만난 생명체, 그것은 악몽이었다"
+        }
+    ],
+    "vs_crime": [
+        {
+            "name": "성스러운 거미",
+            "img": "images/vs_crime_1.jpg",
+            "text": "신의 이름 아래 저지른 연쇄살인"
+        },
+        {
+            "name": "더 팩토리: 최후의 협상",
+            "img": "images/vs_crime_2.jpg",
+            "text": "유괴범과의 마지막 심리전"
+        },
+        {
+            "name": "트레스패스",
+            "img": "images/vs_crime_3.jpg",
+            "text": "침입자와의 숨막히는 하룻밤"
+        }
+    ],
+    "vs_mystery": [
+        {
+            "name": "가비",
+            "img": "images/vs_mystery_1.jpg",
+            "text": "커피 향 속에 감춰진 음모"
+        },
+        {
+            "name": "침범",
+            "img": "images/vs_mystery_2.jpg",
+            "text": "누군가 내 안으로 들어왔다"
+        },
+        {
+            "name": "싸이코메트리",
+            "img": "images/vs_mystery_3.jpg",
+            "text": "기억을 읽는 능력, 진실의 조각을 쫓다"
+        }
+    ],
+    "vs_period": [
+        {
+            "name": "최종병기 활",
+            "img": "images/vs_period_1.jpg",
+            "text": "한 발의 화살, 목숨을 가른다"
+        },
+        {
+            "name": "광해",
+            "img": "images/vs_period_2.jpg",
+            "text": "왕이 된 남자, 진심이 나라를 바꾸다"
+        },
+        {
+            "name": "관상",
+            "img": "images/vs_period_3.jpg",
+            "text": "얼굴로 권력을 읽다"
+        }
+    ],
+    "vs_rom-com": [
+        {
+            "name": "연애의 온도",
+            "img": "images/Rom-com.jpg",
+            "text": "사랑하고 싸우고, 다시 사랑하는 사이"
+        },
+        {
+            "name": "오싹한 연애",
+            "img": "images/vs_rom-com_2.jpg",
+            "text": "귀신보다 더 무서운 썸의 진실"
+        },
+        {
+            "name": "렛 더선샤인 인",
+            "img": "images/vs_rom-com_3.jpg",
+            "text": "사랑을 갈망하는 어른의 연애담"
+        }
+    ],
+    "vs_fantasy": [
+        {
+            "name": "소시지파티",
+            "img": "images/vs_fantasy_1.jpg",
+            "text": "소세지들의 충격적인 진실 대모험"
+        },
+        {
+            "name": "블레이즈",
+            "img": "images/vs_fantasy_2.jpg",
+            "text": "상상의 소녀가 보여주는 또 다른 현실"
+        },
+        {
+            "name": "네무덤에 침을 뱉어라4",
+            "img": "images/vs_fantasy_3.jpg",
+            "text": "죽음 너머의 복수, 잔혹한 카타르시스"
+        }
+    ],
+
+    "hot": [
+        {
+            "name": "청설",
+            "img": "images/hot_1.jpg"
+        },
+        {
+            "name": "콘클라베",
+            "img": "images/hot_2.jpg"
+        },
+        {
+            "name": "너의 이름은",
+            "img": "images/hot_3.jpg"
+        },
+        {
+            "name": "서브스턴스",
+            "img": "images/hot_4.jpg"
+        },
+        {
+            "name": "퇴마록",
+            "img": "images/hot_5.jpg"
+        }
+    ],
+
+    "genre": [
+        {
+            "name": "#공포",
+            "img": "images/Horror.jpg"
+        },
+        {
+            "name": "#코미디",
+            "img": "images/Comedy.jpg"
+        },
+        {
+            "name": "#액션",
+            "img": "images/Action.jpg"
+        },
+        {
+            "name": "#애니메이션",
+            "img": "images/Animation.jpg"
+        },
+        {
+            "name": "#드라마",
+            "img": "images/Drama.jpg"
+        },
+        {
+            "name": "#미스터리",
+            "img": "images/Mystery.jpg"
+        },
+        {
+            "name": "#퀴어",
+            "img": "images/Queer.jpg"
+        },
+        {
+            "name": "#시대극",
+            "img": "images/Period.jpg"
+        },
+        {
+            "name": "#스릴러",
+            "img": "images/Thriller.jpg"
+        },
+        {
+            "name": "#로맨스 코미디",
+            "img": "images/Rom-com.jpg"
+        },
+        {
+            "name": "#로맨스",
+            "img": "images/Romance.jpg"
+        },
+        {
+            "name": "#범죄",
+            "img": "images/Crime.jpg"
+        },
+        {
+            "name": "#판타지",
+            "img": "images/Fantasy.jpg"
+        }
+    ],
+
+    "romance": [
+        {
+            "name": "식물도감",
+            "img": "images/romance_1.jpg"
+        },
+        {
+            "name": "노팅힐",
+            "img": "images/romance_2.jpg"
+        },
+        {
+            "name": "러브레터",
+            "img": "images/romance_3.jpg"
+        },
+        {
+            "name": "박쥐",
+            "img": "images/romance_4.jpg"
+        },
+        {
+            "name": "오늘 밤, 세계에서 이 사랑이 사라진다 해도",
+            "img": "images/romance_5.jpg"
+        }
+    ],
+
+    "ani": [
+        {
+            "name": "나의히어로아카데미아",
+            "img": "images/ani_1.jpg"
+        },
+        {
+            "name": "몬스터호텔",
+            "img": "images/ani_2.jpg"
+        },
+        {
+            "name": "월래스&그로밋 거대토끼의 저주",
+            "img": "images/ani_3.jpg"
+        },
+        {
+            "name": "극장판 하이큐!! 쓰레기장의 결전",
+            "img": "images/ani_4.jpg"
+        },
+        {
+            "name": "드래곤 길들이기",
+            "img": "images/ani_5.jpg"
+        }
+    ],
+
+    "action": [
+        {
+            "name": "베놈",
+            "img": "images/action_1.jpg"
+        },
+        {
+            "name": "아수라",
+            "img": "images/action_2.jpg"
+        },
+        {
+            "name": "내부자들",
+            "img": "images/action_3.jpg"
+        },
+        {
+            "name": "언싱커블",
+            "img": "images/action_4.jpg"
+        },
+        {
+            "name": "월드 인베이젼",
+            "img": "images/action_5.jpg"
+        }
+    ],
+
+    "new": [
+        {
+            "name": "드롭",
+            "img": "images/new_1.jpg"
+        },
+        {
+            "name": "4월의 불꽃",
+            "img": "images/new_2.jpg"
+        },
+        {
+            "name": "오소마츠6쌍둥이 영혼의 타코야끼 파티와 전설의 파자마 파티",
+            "img": "images/new_3.jpg"
+        },
+        {
+            "name": "가는오는 이민정",
+            "img": "images/new_4.jpg"
+        },
+        {
+            "name": "시그널 작전명 트로이",
+            "img": "images/new_5.jpg"
+        }
+    ]
+}

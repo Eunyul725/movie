@@ -1,0 +1,691 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+
+:root{
+    --pink: #FF0558;
+    --black: #000;
+    --dark: #1a1a1a;
+    --gray: #292929;
+    --lightGray: #5d5d5d;
+    --white: #fff;
+    --swiper-theme-color: #FF0558;
+    --swiper-pagination-bullet-inactive-color: #5d5d5d;
+    --swiper-pagination-bullet-inactive-opacity: 1;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 16px;
+    color: var(--white);
+    background: var(--black);
+    overflow-x: hidden;
+}
+hr{ display: none; }
+a { 
+    color: inherit; 
+    text-decoration: none;
+}
+img{ 
+    display: block; 
+    border: 0 none;
+    border-radius: 10px;
+    max-width: 100%;
+}
+ul { list-style: none;}
+/* 공통 layout */
+section {
+    padding: 0px 16px;
+    margin: 0 auto;
+}
+h1 {
+    width: 108px; 
+    height: auto; 
+}
+h2 {
+    font-size: clamp(1.2rem, 2vw, 1.5rem);
+    font-weight: 600;
+    margin-top: 40px;
+    margin-bottom: 14px;
+}
+h3 {
+    font-size: clamp(1rem, 2vw, 1.5rem);
+    font-weight: 600;
+}
+p {
+    font-size: clamp(0.875rem, 1.5vw, 1rem);
+    font-weight: 400;
+}
+button { 
+    background: transparent; 
+    border: 0 none; 
+}
+button, input {
+    font-family: inherit;
+    font-size: inherit;
+}
+
+/* --- mobile 시작 --- */
+#header {
+    width: 100%;
+    height: 63px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: #000;
+    z-index: 100000;
+}
+.header_inner {
+    height: 63px;
+    margin: 0 auto;
+    padding: 0 22px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header_content nav ul { 
+    color: var(--lightGray); 
+    display: none; 
+}
+.tnb {
+    display: flex;
+    gap: 22px;
+}
+.tnb button {
+    cursor: pointer;
+}
+.btn_notify { display: none; }
+.search_wrap input { display: none; }
+
+/* 슬라이드 배너 */
+#slide_container {
+    width: 100%;
+    padding: 0 16px;
+    height: auto;
+    position: relative;
+    margin-top: 63px;
+}
+.banner_swiper {
+    width: 100%;
+    height: 100%;
+}
+.swiper-slide {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    width: 100%;
+    height: auto;
+}
+.swiper-pagination {
+    text-align: right;
+    padding-right: 3%;
+    padding-bottom: 1%;
+    transition: 300ms opacity;
+    transform: translate3d(0, 0, 0);
+    z-index: 10;
+}
+
+.text_content {
+    font-size: clamp(0.8rem, 1.3vw, 1rem);
+    position: absolute;
+    left: 5%;
+    bottom: 5%;
+}
+
+/* 오늘 기분 */
+#mood_today {
+    width: 100%;
+    padding: 0 16px;
+    height: auto;
+    position: relative;
+}
+#mood_today .emoticon {
+    display: flex;
+    justify-content: center;
+    gap: 8%;
+    margin: 0 clamp(12px, 6vw, 30px);
+}
+#mood_today .emoticon a {
+    cursor: pointer;
+    width: clamp(32px, 8vw, 48px);
+    position: relative;
+    padding: 5px;
+    border-radius: 50%;
+    box-sizing: content-box;
+    background:rgba(0,0,0,0);
+    transition:all .25s ease-out;
+}
+#mood_today .emoticon a img {
+    width: 100%;
+    object-fit: cover;
+}
+#mood_today .emoticon a:hover{
+    background:var(--lightGray);
+}
+#mood_today .emoticon a.active{
+    background:var(--pink);
+}
+
+/* 오늘 기분 modal */
+.mood_movies {
+    width: 100%;
+    display: none;
+    opacity: 0;
+    transition: opacity .25s ease-in-out;
+}
+.mood_movies.show {
+    display: block;
+    opacity: 1;
+}
+
+.mood_swiper {
+    padding: 10px 0;
+}
+.mood_swiper .swiper-slide {
+    width: 49%;
+    flex-shrink: 0;
+}
+
+
+/* 밸런스 게임 */
+#balance_game .choice_wrap {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-flow: row nowrap;
+    overflow: hidden;
+    gap: 3%;
+    margin-bottom: 16px;
+}
+#balance_game .choices {
+    height: auto;
+    padding: clamp(16px, 5vw, 30px) 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: var(--dark);
+    text-align: center;
+    border-radius: 10px;
+    cursor: pointer;
+    transition:all .25s ease-out;
+    position: relative;
+}
+.choices img {
+    width: 22%;
+    margin: 0 auto;
+}
+.choices:hover {
+    background: var(--lightGray);
+}
+.choices.active {
+    background: var(--pink) !important;
+}
+.choices:not(.active):hover {
+    background: var(--lightGray) !important;
+}
+.choice_wrap span {
+    font-weight: 800;
+    font-size: 1.5rem;
+}
+
+/* 밸런스게임 modal */
+.balance_movie {
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+    display: none;
+    opacity: 0;
+    transition: opacity .4s ease-in-out;
+}
+.balance_movie.show {
+    display: block;
+    opacity: 1;
+}
+.balance_movie > h2 {
+    margin-bottom: 8px;
+}
+.balance_movie > h3 {
+    margin-bottom: 14px;
+}
+
+.balance_swiper {
+    padding: 10px 0;
+}
+.balance_swiper .swiper-slide {
+    width: 49%;
+    flex-shrink: 0;
+    align-items: flex-start;
+}
+.suggested_movies p {
+    padding-top: 10px;
+}
+.btn_like {
+    background: url("../images/icons_heart.png") no-repeat center center;
+    background-size: cover;
+    width: 8%;
+    height: 10%;
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    cursor: pointer;
+    transition:all .25s ease-out;
+}
+.btn_like:hover,
+.btn_like.active {
+    background-image: url("../images/icons_heart_on.png");
+}
+.btns_wrap {
+    width: 100%;
+    display: flex;
+    gap: 1%;
+    justify-content: center;
+    align-items: center;
+}
+.btns_wrap span, .btns_wrap a  {
+    flex: 1;
+    font-size: clamp(0.875rem, 1.5vw, 1rem) !important;
+    font-weight: 400;
+    border: 1px solid var(--gray);
+    border-radius: 5px;
+    margin-top: 20px;
+    padding: clamp(4px, 1vw, 6px) 0;
+    cursor: pointer;
+    transition:all .25s ease-out;
+}
+.btns_wrap span:hover, .btns_wrap a:hover {
+    background: var(--pink);
+    border: 1px solid var(--pink);
+}
+
+/* 콘텐츠 섹션 공통 */
+.section_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+    margin-top: 40px;
+}
+.section_header h2 { 
+    margin: 0;
+}
+.btn_more {
+    font-size: clamp(0.8rem, 1.3vw, 1rem);
+    color: var(--lightGray);
+}
+
+.movie_item span {
+    display: block;
+    margin-bottom: 14px;
+    font-size: clamp(1rem, 2vw, 1.5rem);
+}
+.movie_item a {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+.movie_swiper {
+    padding: 10px 0;
+}
+.movie_list {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 2%;
+}
+.swiper-slide {
+    width: 49%;
+    flex-shrink: 0;
+}
+
+
+/* 호버/이미지 공통 처리 */
+.movie_list a,
+.suggested_movies a {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    isolation: isolate;
+}
+.movie_list a img,
+.suggested_movies a img {
+    display: block;
+    aspect-ratio: 9/5;
+    object-fit: cover;
+    /* width: 100%;
+    height: auto; */
+    border-radius: 10px;
+    transition: transform .3s ease-out;
+    transform-origin: center center;
+}
+.movie_list a:hover img,
+.suggested_movies a:hover img {
+    transform: scale(1.05);
+}
+
+.movie_item h3 {
+    margin-bottom: 12px;
+}
+
+
+/* footer */
+#footer {
+    padding: 20px;
+    font-size: 0.75rem;
+    color: var(--lightGray);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.footer_top{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.footer_menu ul, .address_wrap ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+.footer_menu ul li, .address_wrap ul li{
+    display: inline-block;
+}
+/* .footer_menu ul li:nth-child(2){
+    display: block;
+} */
+.footer_info dl {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.footer_info dt, .footer_info dd {
+    display: inline-block;
+}
+.footer_info dt {
+    font-weight: 500;
+    min-width: 150px;
+}
+.footer_info dd {
+    display: inline;
+}
+.footer_bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.address_wrap {
+    order: 2;
+}
+.copyright {
+    font-size: 0.75rem;
+    margin-top: 10px;
+}
+.sns_wrap {
+    order: 1;
+    width: 100%;
+    text-align: left;
+}
+.sns_wrap a {
+    margin-right: 8px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: clamp(40px, 10vw, 42px);
+    height: clamp(40px, 10vw, 42px);
+    border: 1px solid var(--white);
+    border-radius: 50%;
+    display: inline-block;
+}
+.facebook { 
+    background-image: url(../images/icon-facebook.png);
+}
+.twitter {
+    background-image: url(../images/icon-twitter.png);
+}
+.instagram { 
+    background-image: url(../images/icon-instagram.png);
+}
+.youtube { 
+    background-image: url(../images/icon-youtube.png);
+}
+/* --- mobile 완성 --- */
+
+
+
+
+/* --- tablet 시작 --- */
+@media screen and (min-width:768px) {
+    section {
+        max-width: 768px;
+        margin: 0 auto;
+    }
+    h2 {
+        font-size: clamp(1.4rem, 2vw, 1.6rem);
+        margin-top: 60px;
+        margin-bottom: 18px;
+    }
+    h3 {
+        font-size: clamp(1.2rem, 2vw, 1.4rem);
+    }
+    p {
+        font-size: clamp(1rem, 2vw, 1.2rem);
+    }
+    .header_inner {
+        max-width: 768px;
+        margin: 0 auto;
+    }
+    .header_content {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 50px;
+    }
+    .header_content nav ul { 
+        display: flex; 
+        flex-direction: row;
+        gap: 24px;
+    }
+    .header_content nav ul li {
+        font-weight: 600;
+        position:relative;
+    }
+    .header_content nav ul li:hover{
+        color: var(--lightGray);
+    }
+    .header_content nav ul li:hover::after {
+        content: ""; 
+        display: block;
+        position: absolute;
+        left: 0;
+        bottom: -8px;
+        width: 100%;
+        transform: scaleX(1.2);
+        transition: transform 0.3s ease-out;
+        border-bottom: 3.5px solid var(--lightGray);
+        border-radius: 2px;
+    }
+    .header_content nav ul li.active{
+        color: var(--white);
+    }
+    .header_content nav ul li.active::after {
+        content:""; 
+        display:block;
+        position:absolute;
+        left:0;
+        bottom:-8px;
+        width:100%;
+        transform: scaleX(1.2);
+        border-bottom: 3.5px solid var(--white);
+        border-radius: 2px;
+    }
+    .btn_notify { display: block; }
+
+    /* 슬라이드 배너 */
+    .swiper-pagination {
+        transform: scaleX(1.2);
+        padding-right: 12%;
+        padding-bottom: 1.5%;
+    }
+    .suggested_movies p {
+        font-size: clamp(0.9rem, 2vw, 1rem);
+    }
+    .text_content {
+        bottom: 8%;
+    }
+
+    /* 오늘 기분 */
+    #mood_today .emoticon a {
+        width: clamp(36px, 8vw, 52px);
+    }
+
+    /* 오늘 기분 modal */
+    .mood_swiper .swiper-slide {
+        width: 32%;
+    }
+
+    /* 밸런스게임 modal */
+    .balance_swiper .swiper-slide {
+        width: 32%;
+    }
+    .suggested_movies p {
+        padding-top: 14px;
+    }
+    .btn_like {
+        width: 10%;
+        height: 12%;
+    }
+    .btns_wrap span, .btns_wrap a  {
+        flex: 1;
+        font-size: clamp(1.2rem, 2vw, 1.4rem) !important;
+        font-weight: 600;
+        padding: clamp(8px, 1vw, 10px) 0;
+    }
+
+    /* 콘텐츠 섹션 공통 */
+    .btn_more {
+        font-size: clamp(1rem, 2vw, 1.2rem);
+    }
+    .movie_swiper {
+        padding: 10px 0;
+    }
+    .movie_list {
+        display: flex;
+        flex-flow: row nowrap;
+        gap: 1%;
+    }
+    .swiper-slide {
+        width: 32%;
+        flex-shrink: 0;
+    }
+    .movie_item span {
+        font-size: clamp(1.2rem, 2vw, 1.4rem);
+    }
+
+    /* footer */
+    #footer {
+        max-width: 768px;
+        margin: 0 auto;
+    }
+    .footer_bottom {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .address_wrap{
+        order: 1;
+        width: 60%;
+    }
+    .sns_wrap {
+        order: 2;
+        width: 40%;
+        text-align: right;
+    }
+    .sns_wrap a {
+        margin-right: 10px;
+    }
+}
+/* --- tablet 완성 --- */
+
+
+
+
+/* --- desktop 시작 --- */
+@media screen and (min-width:1200px) {
+    section {
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+    .header_inner {
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+    .header_content nav ul {
+        font-size: 1.2rem;
+        gap: 50px;
+    }
+
+    /* 슬라이드 배너 */
+    .text_content {
+        bottom: 8%;
+        font-size: clamp(1.4rem, 2vw, 1.6rem);
+    }
+    .swiper-pagination {
+        display: none;
+    }
+
+    /* 오늘 기분 */
+    #mood_today .emoticon a {
+        width: clamp(48px, 8vw, 64px);
+    }
+    /* 오늘 기분 modal */
+    .mood_swiper .swiper-slide {
+        width: 28%;
+    }
+
+    /* 밸런스 게임 */
+    .choices img {
+        width: 18%;
+        margin-bottom: 2%;
+    }
+    .choice_wrap span {
+        font-weight: 800;
+        font-size: 2rem;
+    }
+
+    /* 밸런스게임 modal */
+    .btns_wrap {
+        margin-bottom: 70px;
+    }
+
+    /* 콘텐츠 섹션 공통 */
+    .swiper-slide {
+        width: 28%;
+        flex-shrink: 0;
+    }
+
+    /* footer */
+    #footer {
+        max-width: 1440px;
+        margin: 0 auto;
+        margin-top: 80px;
+        font-size: 0.875rem;
+        gap: 40px;
+    }
+    .footer_top{
+        gap: 40px;
+    }
+
+    .sns_wrap a {
+        margin-right: 14px;
+    }
+}
+/* --- desktop 완성 --- */
